@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розрахунок знижок на товари</title>
+   <link rel="stylesheet" href="style-sale.css">
+   <script src="script-sale.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Розрахунок знижок на товари</h2>
+        <div class="form-group">
+            <label for="price">Початкова ціна товару ($):</label>
+            <input type="number" id="price" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="discount-code">Код знижки:</label>
+            <select id="discount-code">
+                <option value="NEWYEAR">NEWYEAR - 20%</option>
+                <option value="BLACKFRIDAY">BLACKFRIDAY - 30%</option>
+                <option value="SUMMERSALE">SUMMERSALE - 15%</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Кількість одиниць товару:</label>
+            <input type="number" id="quantity" min="1" required>
+        </div>
+        <button onclick="calculate()">Розрахувати</button>
+        <p id="result"></p>
+    </div>
+    <div class="link">
+        <a href="./index-travel.html">Перейти до розрахунку подорожі -></a>
+    </div>
+
+</body>
+</html>
